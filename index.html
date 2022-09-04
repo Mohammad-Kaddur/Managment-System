@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/info.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h2>
+                جمعية علوم القرأن و السنة
+            </h2>
+        </header>
+        <div class="input">
+            <form action="">
+                <label for="name">الاسم الكامل</label>
+                <input type="text" name="aa" id="name" placeholder="الاسم الكامل" required>
+                <label for="number">رقم الغرفة</label>
+                <input type="number" id="number" placeholder="رقم الغرفة" required>
+            </form>
+            <button id="create">حفظ</button>
+        </div>
+        <div class="search">
+            <form action="">
+                <input id="search" type="search" placeholder="بحث">
+            </form>
+            <button id="searchData">بحث</button>
+            <div class="deleteAll">
+                <button id="deleteAll">حذف الكل</button>
+            </div>
+        </div>
+        <div class="output">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>الاسم الكامل</th>
+                        <th>رقم الغرفة</th>
+                        <th>التاريخ</th>
+                        <th>حذف</th>
+                    </tr>
+                </thead>
+                <tbody id="showData" class="">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="JS/info.js"></script>
+</body>
+
+</html>

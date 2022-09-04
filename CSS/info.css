@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111c2a;
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 760px;
+    }
+}
+
+.container {
+    padding: 30px;
+    background-color: #090f16;
+    direction: rtl;
+}
+
+.container header {
+    padding: 30px 0px;
+}
+
+.container header h2 {
+    text-align: center;
+    color: #fff;
+
+}
+
+.container .input form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .input form input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.container .input form label {
+    color: #fff;
+    padding: 15px 0px
+}
+
+.container .input #create {
+    background-color: #ff00e4;
+    color: #fff;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.container .search {
+    width: 100%;
+}
+
+.container .search span {
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+.container .search>form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.container .search>form input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.container .search #searchData {
+    background-color: #ff00e4;
+    color: #fff;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.container .search .deleteAll #deleteAll {
+    background-color: #ff00e4;
+    color: #fff;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.container .output table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .output table thead {
+    width: 100%;
+}
+
+.container .output table thead tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.container .output table thead tr th {
+    color: #fff;
+    padding: 10px;
+}
+
+.container .output table tbody {
+    max-width: 100%;
+}
+
+.container .output table tbody tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.container .output table tbody td {
+    color: #fff;
+    padding: 0px 3px;
+    width: 100%;
+    flex-basis: 70px;
+}
+
+.container .output table tbody td #update {
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #ff00e4;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container .output table tbody td #deletes {
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #ff00e4;
+    padding: 4px 15px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+}
+
+@media(max-width:767px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .output table tbody tr {
+        margin: 10px auto;
+    }
+
+    .container .output table tbody td {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+    }
+}
