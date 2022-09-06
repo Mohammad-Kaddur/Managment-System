@@ -8,9 +8,9 @@ let search = document.getElementById("search");
 
 let arr = [];
 let arrDate = "";
-let dateNow = new Date() +1;
+let dateNow = new Date();
 let dateDay = dateNow.getDate();
-let dateMonth = dateNow.getMonth();
+let dateMonth = dateNow.getMonth() + 1;
 let dateYear = dateNow.getFullYear();
 
 // ##########
