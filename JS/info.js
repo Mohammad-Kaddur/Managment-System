@@ -8,7 +8,7 @@ let search = document.getElementById("search");
 
 let arr = [];
 let arrDate = "";
-let dateNow = new Date();
+let dateNow = new Date() +1;
 let dateDay = dateNow.getDate();
 let dateMonth = dateNow.getMonth();
 let dateYear = dateNow.getFullYear();
